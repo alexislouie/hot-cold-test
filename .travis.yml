@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: qz90ZG4FMthqK4/WZ7GA7tv+cv7iOBE2PxvYuX/DznF683TmrkO5YpIsnQEHQkU9uFcWTZPU7AhYi8CcgwBy6H2T9Tv+KPxu4rwnVkY7VABGgOFKAaHWvRSrwTQaY5yuNt2UsVeM7MjSwAga/whUer48aipxY3nOZw33ghKsJTHkQQXqY+ZoYCtELBsRPOj0GQO3um3TEl8Sl9Gn4QUWGcHN8+qTxJ2o6dlDAzqJTCdPxgtzMtXUvXGjdnFiefXP+NbsEVwXjcz7YSbcvlvdHfDaMq8UbCZ0lwqNyl3S0Wvf9YkjpAXyE7I/huswvZrRfegVaLbMS4sKAamdjTMKBssIc6vs3JstkwZDPUMHyCqwXiVLBC9lCokd97dZAv4MH4DpZ6R7fLbbmuuWi4icxyZZ1WsFm87zLRReWW8hBvkQ5fdAfxmFJXDmtIgOhEM6EIHFxi15AAnW8ge3YD6kENEhL3sfbDSLwC8vEspjR5ng/7bGrRrs0ecGwTcG6PLxF/nNch+qumUcADX1VS4ej77+QyUecW4OQM5jS16me0sS2ES36S28yOTZI5ym146qMN33Cze8Y3/1vDiWAEty3oCheErW2AbUXkBa84iK6FYlIVHh5YfCsZzrNfETBwqfj7KcgoUsDRuJojSpQJeo2Q/23/h/cVNl33xRmaY3XKY=
+  app: nameless-river-40267
+  on:
+    repo: alouie1020/hot-cold-test
